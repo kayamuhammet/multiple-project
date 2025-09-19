@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Temperature Converter App</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="converter-wrapper">
+        <h1>Temperature Converter</h1>
+        
+        <form action="">
+            <input id="celciusInput" type="number" placeholder="Enter temperature: " onkeypress="return event.charCode >= 48 && event.charCode <= 57">
+
+            <select name="selectTemperature" id="selectTemperature">
+                <option value="fahrenheit">Fahrenheit</option>
+                <option value="kelvin">Kelvin</option>
+            </select>
+
+            <button type="button" id="coverterButton">Converter</button>
+        </form>
+        
+        <div>
+            <p id="result"></p>
+        </div>
+    </div>
+    
+
+    <script src="temperatureConverter.js"></script>
+</body>
+</html>

@@ -1,0 +1,101 @@
+body {
+    font-family: 'Press Start 2P', cursive; 
+    background-color: #1a2a33; 
+    color: #a8bfc9; 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    gap: 40px; /* Oyun ve Sonuç panelleri arasına boşluk koyar */
+    text-align: center;
+}
+
+/* --- Oyun Kontrol Paneli --- */
+#gameContainer {
+    background-color: #1f3641; 
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 8px 0 #10212a; /* 3D buton hissi veren gölge */
+    width: 90%;
+    max-width: 500px;
+}
+
+#gameContainer label {
+    display: block; /* Etiketi tam satır yapar */
+    font-size: 1.2rem;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+}
+
+/* --- Oyuncu Seçim Kutusu --- */
+#player1 {
+    width: 100%;
+    padding: 15px;
+    font-size: 1.1rem;
+    font-family: inherit; /* body'deki yazı tipini kullanır */
+    background-color: #a8bfc9; 
+    color: #1a2a33;
+    border: none;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+/* --- Oyunu Başlat Butonu --- */
+#playButton {
+    width: 100%;
+    padding: 15px;
+    font-size: 1.3rem;
+    font-family: inherit;
+    font-weight: bold;
+    color: #1f3641;
+    background-color: #31c3bd; 
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    text-transform: uppercase;
+    box-shadow: 0 5px 0 #118c87;
+    transition: all 0.1s ease-in-out;
+}
+
+#playButton:hover {
+    background-color: #65e9e4;
+}
+
+#playButton:active {
+    transform: translateY(5px); /* Basıldığında aşağı iner */
+    box-shadow: none; /* Basıldığında gölge kaybolur */
+}
+
+/* --- Sonuç Ekranı Paneli --- */
+#resultContainer {
+    background-color: #1f3641;
+    padding: 20px 30px;
+    border-radius: 15px;
+    width: 90%;
+    max-width: 500px;
+}
+
+#resultContainer h1 {
+    font-size: 1.5rem;
+    color: #dbe8ed;
+    margin-top: 0;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+#resultContainer p {
+    font-size: 1.2rem;
+    margin: 15px 0;
+}
+
+/* --- SONUÇ YAZISI  --- */
+#result {
+    font-size: 2.2rem !important; 
+    font-weight: bold;
+    text-transform: uppercase;
+    padding-top: 15px;
+    margin-top: 20px;
+    border-top: 2px solid #10212a;
+}
+

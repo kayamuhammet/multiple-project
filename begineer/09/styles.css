@@ -1,0 +1,97 @@
+body {
+  font-family: 'Montserrat', sans-serif;
+  background-color: #f3e5cf; 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  color: #333;
+}
+
+/* --- Dönüştürücüyü Saran Ana Kart --- */
+.converter-wrapper {
+  background-color: #ffffff;
+  padding: 35px 45px;
+  border-radius: 12px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+  width: 100%;
+  max-width: 400px;
+  text-align: center;
+}
+
+/* --- Ana Başlık --- */
+.converter-wrapper h1 {
+  font-size: 1.8rem;
+  color: #2c3e50;
+  margin: 0 0 25px;
+}
+
+/* --- Form Elemanları --- */
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+/* --- Celcius Giriş Alanı --- */
+#celciusInput {
+  padding: 14px;
+  font-size: 1.1rem;
+  text-align: center;
+  border: 2px solid #ccd6dd;
+  border-radius: 8px;
+  outline: none;
+  background-color: #fdfdfd;
+  transition: border-color 0.3s ease;
+}
+
+#celciusInput::placeholder {
+  color: #a0a8b3;
+}
+
+#celciusInput:focus {
+  border-color: #007acc;
+}
+
+/* --- Birim Seçim Kutusu --- */
+#selectTemperature {
+  padding: 14px;
+  font-size: 1rem;
+  border: 2px solid #ccd6dd;
+  border-radius: 8px;
+  background-color: #ffffff;
+  cursor: pointer;
+  outline: none;
+}
+
+/* --- Dönüştür Butonu --- */
+#coverterButton {
+  padding: 14px;
+  font-size: 1.1rem;
+  font-weight: bold;
+  color: #ffffff;
+  background-color: #e67e22; 
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  letter-spacing: 0.5px;
+  transition: background-color 0.2s ease;
+}
+
+#coverterButton:hover {
+  background-color: #d35400;
+}
+
+/* --- Sonuç Alanı --- */
+#result {
+  margin-top: 20px;
+  font-size: 2rem;
+  font-weight: 600;
+  color: #34495e;
+  background-color: #f0f3f5;
+  border-left: 5px solid #007acc;
+  padding: 18px;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
