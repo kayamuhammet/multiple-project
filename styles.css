@@ -1,0 +1,117 @@
+body {
+    font-family: "Roboto", sans-serif;
+    background: #eeeeee;
+    margin: 0;
+    padding: 20px;
+}
+header {
+    text-align: center;
+    margin-bottom: 40px;
+}
+header h1 {
+    font-size: 2.5rem;
+    margin: 10px 0;
+    color: #222;
+}
+header p {
+    color: #444;
+}
+section h2#easy{
+    margin-bottom: 20px;
+    color: #333;
+    border-left: 6px solid #007BFF;
+    padding-left: 10px;
+}
+section h2#medium{
+    margin-bottom: 20px;
+    color: #333;
+    border-left: 6px solid #ff7300;
+    padding-left: 10px;
+}
+
+section h2#hard{
+    margin-bottom: 20px;
+    color: #333;
+    border-left: 6px solid #ff0000;
+    padding-left: 10px;
+}
+.custom-divider {
+  text-align: center;
+  font-size: 24px;
+  color: #999;
+  margin: 40px 0;
+  letter-spacing: 10px;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); 
+    gap: 20px; 
+}
+.card {
+    background: white;
+    border-radius: 12px; 
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1); 
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    max-width: 100%;
+    box-shadow: 0 0 20px rgba(52, 152, 219, 0.5);
+}
+.card:hover {
+    transform: translateY(-5px) scale(1.01); 
+    box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+}
+.card img {
+    width: 100%;
+    height: 200px; 
+    object-fit: cover;
+}
+.card-content {
+    padding: 15px; 
+    flex: 1;
+}
+.card-content h3 {
+    margin: 0 0 8px; 
+    font-size: 1.1rem; 
+    color: #222;
+}
+.card-content p {
+    font-size: 0.9rem; 
+    color: #555;
+    margin-bottom: 10px; 
+}
+.badges {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px;
+}
+.badge {
+    background: #ff6b6b;
+    color: white;
+    font-size: 0.75rem;
+    padding: 5px 10px;
+    border-radius: 10px;
+    font-weight: 500;
+}
+.badge:nth-child(2n) {
+    background: #ffa94d;
+}
+.badge:nth-child(3n) {
+    background: #4dabf7;
+}
+.badge:nth-child(4n) {
+    background: #51cf66;
+}
+.card-footer {
+    padding: 10px 15px; 
+    border-top: 1px solid #eee;
+    text-align: right;
+}
+.card-footer a {
+    text-decoration: none;
+    color: #007BFF;
+    font-weight: bold;
+    font-size: 0.9rem;
+}
