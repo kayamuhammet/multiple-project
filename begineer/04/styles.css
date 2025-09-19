@@ -1,0 +1,79 @@
+body {
+    background-color: #222831; 
+    color: #eeeeee; 
+    font-family: 'Poppins', sans-serif; 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; 
+    min-height: 100vh; 
+    padding: 20px;
+    margin: 0;
+    text-align: center; 
+}
+
+/* --- Alıntı Getirme Butonu --- */
+#quoteButton {
+    background-color: #F0A500; 
+    color: #222831; 
+    border: none;
+    border-radius: 50px; /* Tamamen yuvarlak kenarlı (pill shape) modern bir buton */
+    padding: 15px 40px;
+    font-size: 1.1rem; /* rem birimi, esnek yazı boyutu sağlar */
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    cursor: pointer;
+    margin-bottom: 40px; /* Buton ile alıntı kutusu arasına boşluk bırakır */
+    transition: transform 0.2s ease-out, box-shadow 0.2s ease-out;
+}
+
+#quoteButton:hover {
+    transform: translateY(-5px); /* Üzerine gelince hafifçe yukarı kayar */
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3); /* Yükselme efekti için gölge ekler */
+}
+
+
+/* --- Alıntının Gösterileceği Ana Kutu (Kart) --- */
+#quoteDiv {
+    background-color: #393E46; 
+    width: 80%;
+    max-width: 700px; 
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
+    border-left: 6px solid #F0A500; 
+}
+
+/* --- Alıntı Kartının İçindeki Paragraflar --- */
+
+/* Kitap Başlığı (İlk paragraf) */
+#quoteDiv p:nth-of-type(1) {
+    font-family: 'Lora', serif; /* Kitap hissiyatı için tırnaklı (serif) bir yazı tipi */
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #ffffff;
+    margin: 0 0 10px 0;
+}
+
+/* Yazar Adı (İkinci paragraf) */
+#quoteDiv p:nth-of-type(2) {
+    font-size: 1.3rem;
+    font-style: italic;
+    color: #F0A500; 
+    margin: 0 0 30px 0;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #555; /* Yazar ile özet arasına ince bir çizgi çeker */
+}
+
+/* Özet (Üçüncü paragraf) */
+#quoteDiv p:nth-of-type(3) {
+    font-size: 1rem;
+    line-height: 1.7; /* Uzun metinlerin daha okunaklı olması için satır aralığını artırır */
+    color: #dddddd;
+    margin: 0;
+}
+
+#quoteText {
+    display: none;
+}

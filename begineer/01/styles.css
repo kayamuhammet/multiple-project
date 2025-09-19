@@ -1,0 +1,62 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex; /* İçindeki elemanları esnek bir kutu içine alır. Hizalamayı kolaylaştırır. */
+    flex-direction: column; /* Elemanları alt alta (dikey olarak) sıralar. */
+    align-items: center; /* Elemanları yatayda ortalar. */
+    justify-content: center; /* Elemanları dikeyde ortalar. */
+    height: 100vh; /* Sayfanın yüksekliğini ekranın tamamı kadar yapar. Bu, dikeyde ortalama için gereklidir. */
+    background-color: #f0f0f0;
+    margin: 0; /* Tarayıcının varsayılan body boşluğunu kaldırır. */
+}
+
+/* Sayaç ve etiketini içeren ana kutu */
+.container {
+    text-align: center; /* İçindeki metinleri ortalar. */
+    margin-bottom: 20px; 
+}
+
+/* "Counter:" yazan etiket */
+label {
+    font-size: 24px; 
+    color: #333; 
+}
+
+/* Sayaç numarasının gösterildiği paragraf */
+#counter {
+    font-size: 48px; 
+    font-weight: bold; 
+    color: #007BFF; 
+    margin: 10px 0; 
+}
+
+/* Tüm butonlar için ortak stil */
+button {
+    padding: 10px 20px; /* Butonun içindeki yazıyla kenarları arasına boşluk ekler (üst/alt 10px, sağ/sol 20px). */
+    margin: 5px; /* Butonların etrafına 5 piksel boşluk ekler, böylece birbirlerine yapışmazlar. */
+    font-size: 16px; 
+    border: none;
+    border-radius: 5px; 
+    color: white; 
+    cursor: pointer; /* Fare üzerine gelince el işareti çıkmasını sağlar. */
+    transition: background-color 0.3s; /* Arka plan rengi değişirken 0.3 saniyelik yumuşak bir geçiş efekti ekler. */
+}
+
+
+button:hover {
+    opacity: 0.9; 
+}
+
+
+#counterUp {
+    background-color: #28a745; 
+}
+
+
+#counterDown {
+    background-color: #ffc107; 
+}
+
+
+#counterReset {
+    background-color: #dc3545; 
+}
