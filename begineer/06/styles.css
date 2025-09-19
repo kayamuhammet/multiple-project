@@ -1,0 +1,39 @@
+body {
+    background-color: #f0f2f5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    /* Arka plan rengi değiştiğinde 0.5 saniyelik yumuşak bir geçişle değişmesini sağlar. */
+    transition: background-color 0.5s ease;
+}
+
+/* --- Arka Plan Değiştirme Butonu --- */
+.random-background-btn {
+    /* Butonun içindeki yazı ile kenarları arasına boşluk bırakır */
+    padding: 20px 40px;
+    font-size: 1.25rem;
+    font-weight: bold;
+    color: #333;
+    background-color: rgba(255, 255, 255, 0.8);
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+    /* Hover (üzerine gelme) efektlerinin yumuşak olmasını sağlar */
+    transition: transform 0.2s ease-out, box-shadow 0.2s ease-out;
+}
+
+/* --- Fare Butonun Üzerine Geldiğinde --- */
+.random-background-btn:hover {
+    /* Butonu hafifçe büyütür */
+    transform: scale(1.05);
+    /* Gölgeyi daha belirgin hale getirerek "yükselme" hissini artırır */
+    box-shadow: 0 12px 35px rgba(0, 0, 0, 0.2);
+}
+
+/* Butona tıklandığı an için küçük bir efekt */
+.random-background-btn:active {
+    transform: scale(0.98); /* Hafifçe küçülür */
+}

@@ -1,0 +1,84 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #292929; 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+}
+
+h1 {
+    font-size: 3rem;
+    font-weight: 600;
+    color: #d1d1d1;
+}
+
+/* --- Form Elemanları --- */
+form {
+    display: flex;
+    flex-direction: column; /* Elemanları alt alta dizer */
+    gap: 20px; /* Elemanlar arasına 20px boşluk bırakır */
+    margin-bottom: 30px; /* Form ile sonuç alanı arasına boşluk koyar */
+}
+
+/* --- Sayı Giriş Alanları ve Seçim Kutusu için Ortak Stiller --- */
+input[type="number"],
+select {
+    width: 100%; /* Kapsayıcısının tamamını kaplar */
+    padding: 15px;
+    font-size: 1.2rem;
+    border: 2px solid #dfe6e9; 
+    border-radius: 8px;
+    background-color: #f9fafb;
+    box-sizing: border-box; /* Padding ve border değerlerini genişliğe dahil eder */
+    transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+/* Tıklandığında (focus) kenarlık ve gölge efekti */
+input[type="number"]:focus,
+select:focus {
+    outline: none;
+    border-color: #0984e3; 
+    box-shadow: 0 0 0 3px rgba(9, 132, 227, 0.1);
+}
+
+/* --- Hesapla Butonu --- */
+#calculatorButton {
+    background-color: #0984e3; 
+    color: white;
+    font-size: 1.1rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    padding: 16px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+#calculatorButton:hover {
+    background-color: #086ebf; 
+}
+
+/* --- Sonuçların Gösterildiği Alan --- */
+#calculatorDiv {
+    background-color: #e8f3fe; 
+    padding: 20px;
+    border-radius: 8px;
+    min-height: 50px; /* Boşken bile bir yüksekliği olur */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px dashed #b2bec3; /* Kesikli bir kenarlık */
+}
+
+/* Sonucun yazdığı paragraf */
+#calculatorDiv p {
+    font-size: 1.5rem;
+    font-weight: 500;
+    color: #2d3436;
+    margin: 0; /* Paragrafın varsayılan boşluğunu sıfırlar */
+}

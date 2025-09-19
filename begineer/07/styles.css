@@ -1,0 +1,57 @@
+body {
+    background-color: #1e1e3f; 
+    color: #e0e0e0; 
+    font-family: 'Consolas', 'Menlo', 'Courier New', monospace;
+    display: flex;
+    flex-direction: column; 
+    justify-content: center; 
+    align-items: center; 
+    height: 100vh;
+    margin: 0;
+}
+
+/* --- Metin Giriş Alanı (Input) --- */
+#text-input {
+    background-color: #2a2a4e; 
+    color: #80ffea; 
+    border: 2px solid #4a4a7e;
+    border-radius: 8px; 
+    width: 80%;
+    max-width: 600px; 
+    padding: 16px 22px; 
+    font-size: 1.5rem; 
+    text-align: center;
+    outline: none; 
+    /* Efektlerin yumuşak geçişli olmasını sağlar */
+    transition: all 0.3s ease-in-out;
+}
+
+/* --- Input Alanına Tıklandığında (Focus Olduğunda) --- */
+#text-input:focus {
+    border-color: #80ffea; 
+    box-shadow: 0 0 20px rgba(128, 255, 234, 0.25); 
+}
+
+/* --- Input Alanındaki Yer Tutucu Metin (Placeholder) --- */
+#text-input::placeholder {
+    color: #6a6a9e; /* Placeholder metnini daha soluk bir renkte gösterir */
+    opacity: 0.8;
+}
+
+
+/* --- Tuş Bilgilerinin Gösterildiği Paragraf --- */
+#key-info {
+    background-color: rgba(0, 0, 0, 0.2); 
+    border-radius: 6px;
+    margin-top: 30px; 
+    padding: 20px;
+    width: 80%;
+    max-width: 600px; 
+    min-height: 2.5em; 
+    font-size: 1.1rem;
+    color: #f0f0f0;
+    text-align: center;
+    line-height: 1.6; 
+    /* Eğer metin kutuya sığmazsa kelimeleri bölerek alt satıra indirir */
+    word-wrap: break-word; 
+}
