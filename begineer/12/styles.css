@@ -1,0 +1,42 @@
+/* --- Sayfanın Genel Yapısı ve Teması --- */
+body {
+    /* Fare imleci: crosshair */
+    cursor: crosshair;
+    background-color: #1a1a1a;
+    /* Sayfanın tamamını kaplaması ve gereksiz boşlukları kaldırmak için */
+    margin: 0;
+    height: 100vh;
+    /* İçerideki div'in taşmasını engellemek için */
+    overflow: hidden; 
+}
+
+/* --- Koordinat Kutusunu Saran div --- */
+div {
+    /* KONUMLANDIRMA: Sayfa ortasında gözükür */
+    position: fixed;
+    bottom: 50%; 
+    left: 50%;   
+    transform: translate(-50%, -50%);
+    
+    /* GÖRÜNÜM: */
+    background-color: rgba(0, 0, 0, 0.6); 
+    border: 1px solid #00ff99; 
+    border-radius: 8px; 
+    padding: 10px 20px; 
+    
+    /* HAFİF PARLAMA EFEKTİ: Çerçeveye uygun bir gölge ekleyerek "glow" efekti verir */
+    box-shadow: 0 0 15px rgba(0, 255, 153, 0.2);
+    
+    /* Kullanıcının yanlışlıkla metni seçmesini engeller */
+    user-select: none; 
+}
+
+/* --- Koordinat Metninin Gösterildiği Paragraf --- */
+#mousePosition {
+    font-family: 'Consolas', 'Courier New', monospace;
+    font-size: 1.5rem; 
+    color: #00ff99; 
+    margin: 0; /* Paragrafın varsayılan dış boşluğunu sıfırlar */
+    min-width: 150px; 
+    text-align: center;
+}

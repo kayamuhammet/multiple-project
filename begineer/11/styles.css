@@ -1,0 +1,11 @@
+/* Sayfa üstünde sabit duran ilerleme çubuğu */
+#progressBar {
+  position: fixed;         /* Sayfa kayarken sabit kalsın */
+  top: 0;                  /* Sayfanın en üstüne yerleşsin */
+  left: 0;                 /* Sol kenardan başlasın */
+  height: 5px;             /* İnce bir çubuk */
+  background-color: #3498db;
+  width: 0%;              /* Başlangıçta görünmesin */
+  z-index: 9999;          /* Diğer içeriklerin üstünde kalsın */
+  transition: width 0.2s ease; /* Yumuşak geçiş efekti */
+}

@@ -68,6 +68,20 @@ const easyProjects = [
         desc: "User plays rock-paper-scissors against computer.",
         img: "images/10.png",
         badges: ["Math.random()", "Conditionals"]
+    },
+    {
+        id: "11",
+        title: "Scroll Progress Bar",
+        desc: "A progress bar showing how far down the page you have scrolled.",
+        img: "images/11.png",
+        badges: ["Scroll Event", "DOM"]
+    },
+    {
+        id: "12",
+        title: "Mouse Position Tracker",
+        desc: "As the mouse moves, it displays the X and Y coordinates on the screen.",
+        img: "images/12.png",
+        badges: ["Mousemove Event", "DOM"]
     }
 ];
 
@@ -88,7 +102,7 @@ function renderProjects(projects, containerId) {
                 </div>
             </div>
             <div class="card-footer">
-                <a href="begineer/${p.id}/index.html" target="_blank">Open Project</a>
+                <a href="begineer/${p.id}/index.html">Open Project</a>
             </div>
         `;
         container.appendChild(card);
