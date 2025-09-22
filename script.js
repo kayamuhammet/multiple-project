@@ -86,7 +86,18 @@ const easyProjects = [
 ];
 
 
-function renderProjects(projects, containerId) {
+const mediumProjects = [
+    {
+        id: "01", 
+        title: "CRUD Note Application with LocalStorage",
+        desc: "A fully featured note-taking application displaying all four CRUD (Create, Read, Update, Delete) operations. Its key feature is the use of `localStorage` to ensure data persistence.",
+        img: "images/01-medium.png", 
+        badges: ["CRUD", "LocalStorage", "DOM Manipulation", "Events"]
+    }
+];
+
+
+function renderProjects(projects, containerId, folder = 'begineer') {
     const container = document.getElementById(containerId);
 
     projects.forEach(p => {
@@ -102,7 +113,7 @@ function renderProjects(projects, containerId) {
                 </div>
             </div>
             <div class="card-footer">
-                <a href="begineer/${p.id}/index.html">Open Project</a>
+                <a href="${folder}/${p.id}/index.html">Open Project</a>
             </div>
         `;
         container.appendChild(card);
@@ -111,3 +122,4 @@ function renderProjects(projects, containerId) {
 
 
 renderProjects(easyProjects, "easy-projects");
+renderProjects(mediumProjects, "medium-projects", "medium");
