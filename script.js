@@ -96,10 +96,10 @@ const mediumProjects = [
     },
     {
         id: "02",
-        title: "Pomodoro Timer with Mode Switching",
-        desc: "A functional Pomodoro timer that toggles between work and break modes. Includes start, pause, and stop controls",
+        title: "Movie Filter App with Genre Selection",
+        desc: "A movie listing interface where users can filter movies by genre.",
         img: "images/02-medium.png",
-        badges: ["Timer Logic", "DOM Update", "Event Listener", "State Management"]
+        badges: ["DOM Manipulation", "Event Listener"]
     }
 
 ];
