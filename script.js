@@ -93,7 +93,15 @@ const mediumProjects = [
         desc: "A fully featured note-taking application displaying all four CRUD (Create, Read, Update, Delete) operations. Its key feature is the use of `localStorage` to ensure data persistence.",
         img: "images/01-medium.png", 
         badges: ["CRUD", "LocalStorage", "DOM Manipulation", "Events"]
+    },
+    {
+        id: "02",
+        title: "Pomodoro Timer with Mode Switching",
+        desc: "A functional Pomodoro timer that toggles between work and break modes. Includes start, pause, and stop controls",
+        img: "images/02-medium.png",
+        badges: ["Timer Logic", "DOM Update", "Event Listener", "State Management"]
     }
+
 ];
 
 
