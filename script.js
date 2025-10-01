@@ -100,6 +100,13 @@ const mediumProjects = [
         desc: "A movie listing interface where users can filter movies by genre.",
         img: "images/02-medium.png",
         badges: ["DOM Manipulation", "Event Listener"]
+    },
+    {
+        id: "03",
+        title: "Simple Fake Chat App",
+        desc: "A playful chat interface where users can send messages and receive predefined bot replies.",
+        img: "images/03-medium.png",
+        badges: ["DOM Manipulation", "Event Listener"]
     }
 
 ];
